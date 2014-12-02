@@ -32,7 +32,10 @@
           "begin": "\\\"",
           "end": "\\\"",
           "patterns": [
-              { "include": "#inshortstring-code" }
+              { "include": "#inshortstring-code" },
+              {  "name": "string.char.nit",
+                 "match": "([^\\\\]|\\\\.)"
+              }
           ]
       },
       "long-tquote-string": {
@@ -40,7 +43,10 @@
           "begin": "\\\"\\\"\\\"",
           "end": "\\\"\\\"\\\"",
           "patterns": [
-              { "include": "#inlongstring-code" }
+              { "include": "#inlongstring-code" },
+              {  "name": "string.char.nit",
+                 "match": "([^\\\\]|\\\\.)"
+              }
           ]
       },
       "long-tquote-alt-string": {

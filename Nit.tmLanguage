@@ -233,6 +233,12 @@
 					<key>include</key>
 					<string>#inlongstring-code</string>
 				</dict>
+				<dict>
+					<key>match</key>
+					<string>([^\\]|\\.)</string>
+					<key>name</key>
+					<string>string.char.nit</string>
+				</dict>
 			</array>
 		</dict>
 		<key>markup</key>
@@ -262,6 +268,12 @@
 				<dict>
 					<key>include</key>
 					<string>#inshortstring-code</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>([^\\]|\\.)</string>
+					<key>name</key>
+					<string>string.char.nit</string>
 				</dict>
 			</array>
 		</dict>
