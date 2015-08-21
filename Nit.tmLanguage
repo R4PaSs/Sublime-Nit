@@ -75,21 +75,39 @@
 			<array>
 				<dict>
 					<key>match</key>
+					<string>-?(([0-9]*.[0-9])|([0-9]+))+e-?[0-9]+</string>
+					<key>name</key>
+					<string>constant.numeric.float_exp.nit</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>-?[0-9]*\.[0-9]+</string>
 					<key>name</key>
 					<string>constant.numeric.float.nit</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>-?([0-9]+)</string>
+					<string>-?0(x|X)[0-9A-Fa-f_]+((u|i)(8|(16)|(32)))?</string>
 					<key>name</key>
-					<string>constant.numeric.int.nit</string>
+					<string>constant.numeric.hex.nit</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>-?0(x|X)[0-9A-Fa-f]+</string>
+					<string>-?0(o|O)[0-7_]+((u|i)(8|(16)|(32)))?</string>
 					<key>name</key>
-					<string>constant.numeric.hex.nit</string>
+					<string>constant.numeric.oct.nit</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>-?0(b|B)[0-1_]+((u|i)(8|(16)|(32)))?</string>
+					<key>name</key>
+					<string>constant.numeric.bin.nit</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>-?[0-9][0-9_]*((u|i)(8|(16)|(32)))?</string>
+					<key>name</key>
+					<string>constant.numeric.dec.nit</string>
 				</dict>
 				<dict>
 					<key>match</key>
