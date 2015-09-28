@@ -173,7 +173,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(label|if|then|loop|else|while|for|do|end|in)\b</string>
+					<string>\b(label|if|then|loop|else|while|for|do|end|in|with)\b</string>
 					<key>name</key>
 					<string>keyword.control.nit</string>
 				</dict>

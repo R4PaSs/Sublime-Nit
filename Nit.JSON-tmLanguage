@@ -159,7 +159,7 @@
           "patterns": [
               {
                   "name": "keyword.control.nit",
-                  "match": "\\b(label|if|then|loop|else|while|for|do|end|in)\\b"
+                  "match": "\\b(label|if|then|loop|else|while|for|do|end|in|with)\\b"
               },
               {
                   "name": "keyword.breaks.nit",
